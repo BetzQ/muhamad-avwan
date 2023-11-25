@@ -94,6 +94,7 @@
 
       </div>
     </nav>
+
 <div class="absolute -top-5" id="home"></div>
     <div
       class="relative overflow-hidden bg-cover bg-no-repeat p-12 text-center"
@@ -113,6 +114,15 @@
               Empowering Digital Excellence: Crafting Seamless Experiences from
               Frontend Elegance to Backend Precision.
             </h4>
+            <a href="https://www.linkedin.com/in/muhamad-avwan-58a75421b/details/certifications/" target="_blank">
+            <button
+          type="button"
+          class="rounded border-2 border-neutral-50 px-7 pb-[8px] pt-[10px] text-sm font-medium uppercase leading-normal text-neutral-50 transition duration-150 ease-in-out hover:border-neutral-100 hover:bg-neutral-500 hover:bg-opacity-10 hover:text-neutral-100 focus:border-neutral-100 focus:text-neutral-100 focus:outline-none focus:ring-0 active:border-neutral-200 active:text-neutral-200 dark:hover:bg-neutral-100 dark:hover:bg-opacity-10"
+          data-te-ripple-init
+          data-te-ripple-color="light">
+          My 15+ licenses & certifications
+        </button>
+      </a>
           </div>
         </div>
       </div>
@@ -185,7 +195,7 @@
     </div>
 
 <!-- component -->
-<section class="ray-50 relative z-10" style="background-color: #171717;" id="skill">
+<section class="ray-50 relative z-10 navbar" id="skill">
   <div class="py-10  sm:py-16 block lg:py-24 relative bg-opacity-50  z-40  " >
 
           <div class="px-4 mx-auto max-w-4xl sm:px-6 lg:px-2 relative">
@@ -258,97 +268,7 @@
   </div>
 </footer>
 
-<script>
-  // Data keahlian
-  const skills = [
-  { name: 'HTML5', description: 'Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.', path: 'img/html.png' },
-  { name: 'CSS3 (Tailwind, Bootstrap)', description: 'Deskripsi CSS.', path: 'img/css.png' },
-  { name: 'JavaScript (ES6+)', description: 'Deskripsi JavaScript.', path: 'img/javascript.png' },
-  { name: 'TypeScript', description: 'Deskripsi TypeScript.', path: 'img/typescript.png' },
-  { name: 'React.js', description: 'Deskripsi React.js.', path: 'img/react.png' },
-  { name: 'MaterialUI', description: 'Deskripsi MaterialUI.', path: 'img/materialui.png' },
-  { name: 'Node.js', description: 'Deskripsi Node.js.', path: 'img/nodejs.png' },
-  { name: 'Express.js', description: 'Deskripsi Express.js.', path: 'img/expressjs.png' },
-  { name: 'MongoDB', description: 'Deskripsi MongoDB.', path: 'img/mongodb.png' },
-  { name: 'MySQL', description: 'Deskripsi MySQL.', path: 'img/mysql.png' },
-  { name: 'GitHub', description: 'Deskripsi GitHub.', path: 'img/github.png' },
-  // Tambahkan keahlian lain sesuai kebutuhan
-];
-
-
-  // Mendapatkan elemen dengan ID 'my-skill'
-  const mySkillContainer = document.getElementById('my-skill');
-
-  // Membuat loop untuk setiap keahlian dan membuat elemen HTML sesuai
-  skills.forEach(skill => {
-    const skillElement = document.createElement('a');
-    skillElement.href = '#';
-    skillElement.className = 'transition-all duration-1000 bg-white hover:bg-gray-800 hover:shadow-xl m-2 p-4 relative z-40 group';
-    skillElement.innerHTML = `
-      <div class="absolute bg-gray-800/50 top-0 left-0 w-24 h-1 z-30 transition-all duration-200 group-hover:bg-white group-hover:w-1/2"></div>
-      <div class="py-2 px-9 relative">
-        <div class="rounded-full w-32 h-32 mb-5 border border-gray-400 bg-cover" style="background-image: url(${skill.path})"></div>
-          <!-- SVG Path -->
-        </svg>
-        <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white">${skill.name}</h3>
-        <p class="mt-4 text-base text-gray-600 group-hover:text-white">${skill.description}</p>
-      </div>
-    `;
-    mySkillContainer.appendChild(skillElement);
-  });
-  window.addEventListener('scroll', function() {
-      // Mendapatkan nilai scroll
-      var scrollPosition = window.scrollY;
-
-      // Menampilkan nilai scroll di konsol
-      console.log('Scroll Position:', scrollPosition);
-
-      // Mendapatkan elemen dengan class nav-custom
-      var navElement = document.querySelector('.nav-custom');
-      var navItems = document.querySelector('.nav-items');
-
-      // Manipulasi class berdasarkan nilai scroll
-      if (scrollPosition >= 96) {
-        // Jika scroll position lebih dari atau sama dengan 96
-        navElement.classList.remove('navbar','shadow');
-        navElement.classList.add('fixed');
-        navItems.classList.add('duration-300', 'mb-16');
-      } else {
-        // Jika scroll position kurang dari 96
-        navElement.classList.add('navbar','shadow');
-        navElement.classList.remove('fixed');
-        navItems.classList.remove('duration-300','fixed', 'mb-16');
-      }
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-      // Mendapatkan elemen anchor pertama
-      var firstAnchor = document.querySelector('.nav-items a');
-
-      // Menambahkan kelas pada elemen anchor pertama saat memuat halaman
-      firstAnchor.classList.add('border-blue-500', 'dark:text-gray-200', 'text-gray-800');
-
-      // Menambahkan event click pada setiap elemen anchor
-      document.querySelectorAll('.nav-items a').forEach(function(anchor) {
-        anchor.addEventListener('click', function(event) {
-          // Mencegah tindakan default
-          event.preventDefault();
-
-          // Menghapus kelas dari semua elemen anchor
-          document.querySelectorAll('.nav-items a').forEach(function(a) {
-            a.classList.remove('border-blue-500', 'dark:text-gray-200', 'text-gray-800');
-          });
-
-          // Menambahkan kelas pada elemen anchor yang diklik
-          this.classList.add('border-blue-500', 'dark:text-gray-200', 'text-gray-800');
-
-          // Mendapatkan hash dari href dan menambahkannya ke URL
-          var hash = this.getAttribute('href').substring(1); // menghilangkan karakter '#' di depan
-          window.location.hash = hash;
-        });
-      });
-    });
-</script>
+<script src="index.js"></script>
 
   </body>
 </html>
