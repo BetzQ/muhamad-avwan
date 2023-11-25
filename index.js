@@ -30,9 +30,9 @@
             <!-- SVG Path -->
           </svg>
           <h3 class="mt-8 text-lg font-semibold text-black group-hover:text-white">${skill.name}</h3>
-          <p class="mt-4 text-base text-gray-600 group-hover:text-white">${skill.description}</p>
         </div>
       `;
+    //   <p class="mt-4 text-base text-gray-600 group-hover:text-white">${skill.description}</p>
       mySkillContainer.appendChild(skillElement);
     });
     window.addEventListener('scroll', function() {
