@@ -51,12 +51,12 @@
           // Jika scroll position lebih dari atau sama dengan 96
           navElement.classList.remove('navbar','shadow');
           navElement.classList.add('fixed');
-          navItems.classList.add('duration-300', 'mb-16');
+          navItems.classList.add('duration-300', 'md:mb-16','mb-14','md:pb-6','pb-8');
         } else {
           // Jika scroll position kurang dari 96
           navElement.classList.add('navbar','shadow');
           navElement.classList.remove('fixed');
-          navItems.classList.remove('duration-300','fixed', 'mb-16');
+          navItems.classList.remove('duration-300','fixed', 'md:mb-16','mb-14','md:pb-6','pb-8');
         }
       });
   
