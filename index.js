@@ -5,6 +5,7 @@
     { name: 'JavaScript (ES6+)', description: 'Deskripsi JavaScript.', path: 'img/javascript.png' },
     { name: 'TypeScript', description: 'Deskripsi TypeScript.', path: 'img/typescript.png' },
     { name: 'React.js', description: 'Deskripsi React.js.', path: 'img/react.png' },
+    { name: 'Redux', description: 'Deskripsi Redux.', path: 'img/redux.png' },
     { name: 'MaterialUI', description: 'Deskripsi MaterialUI.', path: 'img/materialui.png' },
     { name: 'Node.js', description: 'Deskripsi Node.js.', path: 'img/nodejs.png' },
     { name: 'Express.js', description: 'Deskripsi Express.js.', path: 'img/expressjs.png' },
